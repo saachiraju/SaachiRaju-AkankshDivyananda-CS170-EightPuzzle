@@ -26,12 +26,14 @@ def projectIntro():
     print("\t1. Uniform Cost Search")
     print("\t2. A* with the Misplaced Tile heuristic")
     print("\t3. A* with the Euclidean distance heuristic")
-    
-    alg_choice = input("\t")  # Capturing algorithm choice
-    return Puzzle, alg_choice  # Return values for further processing
+
+    # for testing sake
+    alg_choice = input("\t")  
+    return Puzzle, alg_choice 
 
 if __name__ == '__main__':
-    puzzle, alg_choice = projectIntro()  # Capture returned values
+    # all for tempororary testing to see if it works
+    puzzle, alg_choice = projectIntro() 
     print(f"Selected puzzle: {puzzle}")
     print(f"Chosen algorithm: {alg_choice}")
 
