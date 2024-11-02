@@ -274,7 +274,7 @@ def a_star_misplaced_tile_search(problem):
 def print_state(node):
     for index, value in enumerate(node.get_state()):
         if value == 0:
-            print("b", end=' ')  # Print 'b' for the blank space
+            print("b", end=' ') 
         else:
             print(value, end=' ')
         if (index + 1) % 3 == 0:  # Move to the next line after every 3 elements
@@ -283,13 +283,13 @@ def print_state(node):
 
 # Test cases for the puzzle
 test_cases = {
-    "Trivial": [1, 2, 3, 4, 5, 6, 7, 8, 0],  # Already solved state
-    "Very Easy": [1, 2, 3, 4, 5, 6, 7, 0, 8],  # Near solution
-    "Easy": [1, 2, 0, 4, 5, 3, 7, 8, 6],  # Simple puzzle
-    "Doable": [0, 1, 2, 4, 5, 3, 7, 8, 6],  # More steps needed
-    "Impossible": [1, 2, 3, 4, 5, 6, 8, 7, 0],  # Unsolvable state
-    "Oh Boy": [8, 7, 1, 6, 0, 2, 5, 4, 3],  # Complex puzzle
-    "Trace": [1, 0, 3, 4, 2, 6, 7, 5, 8]  # Specific example for tracing
+    "Trivial": [1, 2, 3, 4, 5, 6, 7, 8, 0], 
+    "Very Easy": [1, 2, 3, 4, 5, 6, 7, 0, 8],  
+    "Easy": [1, 2, 0, 4, 5, 3, 7, 8, 6], 
+    "Doable": [0, 1, 2, 4, 5, 3, 7, 8, 6], 
+    "Impossible": [1, 2, 3, 4, 5, 6, 8, 7, 0], 
+    "Oh Boy": [8, 7, 1, 6, 0, 2, 5, 4, 3],  
+    "Trace": [1, 0, 3, 4, 2, 6, 7, 5, 8]  
 }
 
 # User interface to input puzzle and choose algorithm
