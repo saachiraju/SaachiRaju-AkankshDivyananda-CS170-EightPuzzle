@@ -84,6 +84,7 @@ def euclidean_distance_heuristic(state):
     return total_distance
 
 
+
 def a_star_euclidean_search(problem):
     start_node = Node(problem.initial_state, cost=0, depth=0)
     priorityQueue = queue.PriorityQueue()
