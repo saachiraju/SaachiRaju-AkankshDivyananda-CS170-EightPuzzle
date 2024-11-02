@@ -83,7 +83,7 @@ def euclidean_distance_heuristic(state):
 
     return total_distance
 
-# Modified function for A* search with heuristic
+
 def a_star_euclidean_search(problem):
     start_node = Node(problem.initial_state, cost=0, depth=0)
     priorityQueue = queue.PriorityQueue()
@@ -196,8 +196,8 @@ def print_state(node):
 
 
 test_cases = {
-        "Trivial": [1, 2, 3, 4, 5, 6, 7, 8, 0],
-        "Easy": [1, 2, 3, 4, 5, 0, 6, 7, 8],
+        "Trivial": [1, 2, 3, 4, 5, 6, 7, 8, 0], # passed
+        "Easy": [1, 2, 3, 4, 5, 0, 6, 7, 8], # passed
         "Very Easy": [1, 2, 3, 4, 5, 6, 7, 0, 8],  # passed for eucledian
         "Doable": [1, 2, 0, 4, 5, 3, 7, 8, 6], # Passed for Eucledian
         "Impossible": [1, 2, 3, 4, 5, 6, 8, 7, 0], # did not pass for Eucledian
@@ -211,7 +211,7 @@ def projectIntro():
     choice = int(input("\t"))
 
     if choice == 1:
-        puzzle = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+        puzzle = [8, 7, 1, 6, 0, 2, 5, 4, 3]
         print("\nUsing the default puzzle configuration.")
     elif choice == 2:
         print("\nEnter your puzzle, use a zero to represent the blank")
